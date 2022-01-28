@@ -21,7 +21,7 @@ Secondary Color (Light-yellow): #e0b354;
 }
 
 body {
-    font-family:'Abhaya Libre', serif;
+    font-family:'Zen Maru Gothic', sans-serif;
     font-weight:400;
     background-color: #fff;
     color: #2b2b2b;
@@ -65,7 +65,7 @@ input, texture, select, button {
 button {
 color: #2b2b2b;
 background: #e0b354;
-font-family: 'Abhaya Libre', serif;
+font-family: 'Zen Maru Gothic', sans-serif;
 text-decoration: none;
 -webkit-transition: 0.2s opacity;
 -o-transition: 0.2s opacity;
@@ -86,7 +86,7 @@ text-transform: none;
 .button {
 color: #2b2b2b;
 background: #e0b354;
-font-family: 'Abhaya Libre', serif;
+font-family: 'Zen Maru Gothic', sans-serif;
 text-decoration: none;
 -webkit-transition: 0.2s opacity;
 -o-transition: 0.2s opacity;
