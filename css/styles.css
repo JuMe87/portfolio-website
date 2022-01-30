@@ -2,115 +2,97 @@
 Colors used
 
 Text Color (Dark Gray): #2b2b2b;
-Primary Color (white): #fff;
-Secondary Color (Light-yellow): #e0b354;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
  */
  
-:root {
-    --primary-color: #fff;
-    --secondary-color: #2b2b2b;
-    --third-color: #e0b354;
-    --main-font: 'Zen Maru Gothic', sans-serif;
-    --font-weight-body: 400;
-    --font-weight-bold: 700;
-    --link: none;  
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 body {
-    font-family:var(--main-font);
-    font-weight:var(--font-weight-body);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    }
-
-a{
-	color: var(--secondary-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    /* Sets the font size to 16px */
+    line-height: 1.6;
+    /* Sets the line-height to 1.6 */
 }
-
-a:hover, a:focus{
-	text-decoration: none;
-}
-
-a:visited{
-	color: var(--secondary-color);
-}
-
-a:active{
-	color: var(--secondary-color);
-}
- 
+  
 h1 {
     font-size: 30px;
-    font-weight: var(--font-weight-bold);
+    font-weight: 700;
 }
   
 h2 {
     font-size: 24px;
-    font-weight: var(--font-weight-bold);
+    font-weight: 700;
 }
   
 h3 {
     font-size: 18px;
-    font-weight: var(--font-weight-bold);
+    font-weight: 700;
 }
 
-input, texture, select, button {
-	font-family: system-ui;
+a {
+    color: #357b70;
 }
 
-button,
-.button {
-color: var(--secondary-color);
-background: var(--third-color);
-font-family: var(--main-font);
-text-decoration: none;
-transition: 0.2s opacity;
-margin-top: 2rem 0rem;
-text-decoration: none;
-display: inline-block;
-padding: 1rem 1rem;
-border-radius: 5px;
-border: none;
-font-weight: 300;
-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+a:visited {
+    /* visited link */
+    color: #05676e;
+}
+  
+a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+}
 
-text-transform: var(--link);
+a:active {
+    /* selected link */
+    color: #489c79;
 }
 
 button {
-margin-top: 3rem;
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #357b70;
+    color: white;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-opacity: 0.6;
-cursor: pointer;
+.button__secondary {
+    background-color: #e0b354;
+    color: #2b2b2b;
 }
 
-.button_secondary {
-	background-color: var(--secondary-color);
-	color: var(--primary-color);
-}
-
-.navigation-list {
-    list-style-type: none;
-}
-
-.navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+button:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
 }
 
 .navigation-list__item--active {
     text-decoration: none;
+}
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .profile {
@@ -123,26 +105,18 @@ cursor: pointer;
     margin: 0 auto;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .profile__text {
     flex: 1 1 100px;
-}
-
-.profile__portrait {
-    float: left;
-    width: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
-}
-
-#logo {
-    transform: translateY(-20%);
 }
 
 .page-header {
     display: flex;
     width: 100%;
     padding: 20px;
-    border-bottom: 1px solid rgb(206, 188, 188);
 }
 
 .page-header__item {
@@ -154,11 +128,13 @@ cursor: pointer;
     text-align: right;
 }
 
-.page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.navigation-list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
 }
 
 .grid {
@@ -208,15 +184,6 @@ cursor: pointer;
 @media all and (max-width: 500px) {
     .grid {
       grid-template-columns: 1fr;
-    }
-  }
-  @media all and (min-width: 500px) and (max-width: 750px){
-    .grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media all and (max-width: 750px) {
-    .grid {
       grid-gap: 10px;
     }
     .grid__item:last-child {
@@ -228,44 +195,19 @@ cursor: pointer;
     }
 }
 
-@keyframes color-change {
-    0% {
-      fill: #edc655;
+@media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
     }
-    50% {
-      fill: #fcffad;
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
     }
-    100% {
-      fill: #f76414;
-    }
-}
-
-.sun {
-    animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
+    h1 {
+      font-size: 22px;
     }
 }
 
-.cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-}
 
-@keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
-}
 
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-}
