@@ -1,127 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Previous Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Juliane Meyen is a web developer who specializes in front-end development."
+        />
+        <meta name="keywords" content="Juliane Meyen, Web Developer" />
+        <link rel="icon" sizes="32x32" href="./img/favicon-32x32.png" />
+        <link rel="shortcut icon" href="img/logo.svg" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Zen+Kaku+Gothic+Antique:wght@100;400;600;900&family=Zen+Maru+Gothic&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/style.production.css"
+        />
+    </head>
 
-  <head>
-    <link rel="icon" sizes="32x32" href="./img/favicon-32x32.png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Juliane Meyen - Portfolio portfolio-website</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Zen+Kaku+Gothic+Antique:wght@300&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css"> 
-  </head>
+    <body>
+        <!-- Header including the logo and the main navigation -->
+        <div class="container">
+            <header class="page-header">
+                <!-- <a href="index.html">
+                    <img
+                        src="img/logo.svg"
+                        class="page-header__logo page-header__item"
+                        alt="Personal logo of Juliane Meyen"
+                    />
+                </a> -->
 
-<body>
-  
-  <!-- Header including the logo and the main navigation -->
-  <header class="page-header">
-    <img src="img/logo.svg" alt="Personal logo of Juliane Meyen">
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-        </li>
-        <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-         </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+                <!-- Navbar-->
+                <nav class="page-header__item">
+                    <ul role="menubar" class="navigation-list">
+                        <li role="presentation">
+                            <a
+                                href="index.html"
+                                role="menuitem"
+                                class="navigation-list__item navigation-list__item--active"
+                                >Home</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                href="about.html"
+                                role="menuitem"
+                                class="navigation-list__item"
+                                >About</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                href="work.html"
+                                role="menuitem"
+                                class="navigation-list__item"
+                                >Work</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                href="contact.html"
+                                role="menuitem"
+                                class="navigation-list__item"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-<!-- Main content-->
-  <section>
-    <h1>Work</h1>
-    <div class="grid">
-      <!--Grid items will live here-->
-        <div class="grid__item">
-            <h2>Project 1:</h2>
-            <br>
-            <h3>Designing my own portfolio-website</h3>
-            <br>
-            <p> 
-                Within this project, I was responsible for the front end. It's written in React.js. Additionally, I've created the HTML and CSS templates. 
-            </p>
-            <br>
-            <a href="https://github.com/JuMe87/portfolio-website"> View code on GitHub</a>
-            <br>
-            <a href="hhttps://jume87.github.io/portfolio-website/"> See my Portfolio-Website on GitHub</a>
+            <!-- Main content-->
+            <main>
+                <h1>Work</h1>
+                <div class="grid">
+                    <!--Grid items live here-->
+
+                    <!--Achievement 1-->
+                    <div class="grid__item">
+                        <h2>Achievement 1 Project: Pokédex-App</h2>
+                        <img
+                            class="grid_item__img"
+                            src="img/Screenshot_Overview Pokemon.png"
+                        />
+                        <p>
+                            To build a small web application with HTML, CSS, and
+                            JavaScript that loads data from an external API and
+                            enables the viewing of data points in detail. The
+                            app uses the following API to load information on
+                            pokemon:
+                            https://pokeapi.co/api/v2/pokemon/?limit=150
+                        </p>
+                        <a
+                            href="https://github.com/JuMe87/Pokedex-App"
+                            target="_blank"
+                        >
+                            View code on GitHub</a
+                        >
+                        <br />
+                        <a
+                            href="https://jume87.github.io/Pokedex-App/"
+                            target="_blank"
+                        >
+                            Link to live app</a
+                        >
+                    </div>
+
+                    <!--Achievement 2-->
+                    <div class="grid__item">
+                        <h2>Achievement 2: myFlix - movie_api</h2>
+                        <p>
+                            To build the server-side component of a “movies” web
+                            application. The web application will provide users
+                            with access to information about different movies,
+                            directors, and genres. Users will be able to sign
+                            up, update their personal information, and create a
+                            list of their favorite movies.
+                        </p>
+                        <a
+                            href="https://github.com/JuMe87/movie_api"
+                            target="_blank"
+                        >
+                            View code on GitHub</a
+                        >
+                        <br />
+                        <a
+                            href="https://jume87.github.io/movie_api/"
+                            target="_blank"
+                        >
+                            Link to live app</a
+                        >
+                    </div>
+
+                    <!--Achievement 3-->
+                    <div class="grid__item">
+                        <h2>
+                            Achievement 3 Project: React App (myFlix) -
+                            myFlix-client
+                        </h2>
+                        <img
+                            class="grid_item__img"
+                            src="img/Screenshot_Movie View.png"
+                        />
+                        <p>
+                            Using React, build the client-side for an
+                            application called myFlix based on its existing
+                            server-side code (REST API and database).
+                        </p>
+                        <a
+                            href="https://github.com/JuMe87/myFlix-client"
+                            target="_blank"
+                        >
+                            View code on GitHub</a
+                        >
+                        <br />
+                        <a
+                            href="https://jume87.github.io/myFlix-client/"
+                            target="_blank"
+                        >
+                            Link to live app</a
+                        >
+                    </div>
+
+                    <!--Achievement 4-->
+                    <div class="grid__item">
+                        <h2>Achievement 4 Project: Meet App</h2>
+                        <img
+                            class="grid_item__img"
+                            src="img/Screenshot_Overview Events.png"
+                        />
+                        <p>
+                            To build a serverless, progressive web application
+                            (PWA) with React using a test-driven development
+                            (TDD) technique. The application uses the Google
+                            Calendar API to fetch upcoming events.
+                        </p>
+                        <a
+                            href="https://github.com/JuMe87/meet"
+                            target="_blank"
+                        >
+                            View code on GitHub</a
+                        >
+                        <br />
+                        <a
+                            href="https://jume87.github.io/meet/"
+                            target="_blank"
+                        >
+                            Link to live app</a
+                        >
+                    </div>
+
+                    <!--Achievement 5-->
+                    <div class="grid__item">
+                        <h2>
+                            Achievement 5 Project: React Native Mobile Chat App
+                        </h2>
+                        <img class="grid_item__img" src="img/screenshot1.PNG" />
+                        <p>
+                            To build a chat app for mobile devices using React
+                            Native. The app will provide users with a chat
+                            interface and options to share images and their
+                            location.
+                        </p>
+                        <a
+                            href="https://github.com/JuMe87/chat-app"
+                            target="_blank"
+                        >
+                            View code on GitHub</a
+                        >
+                    </div>
+
+                    <!--Achievement 6-->
+                    <div class="grid__item">
+                        <h2>
+                            Achievement 6 Project: Angular App (myFlix) -
+                            MyFlixAngularClient
+                        </h2>
+                        <img
+                            class="grid_item__img"
+                            src="img/Screenshot_Movie View.png"
+                        />
+                        <p>
+                            This project was generated with Angular CLI version
+                            14.0.6. The objective of this project was as
+                            follows: Using Angular, build the client-side for an
+                            application called myFlix based on its existing
+                            server-side code (REST API and database), with
+                            supporting documentation.
+                        </p>
+                        <a
+                            href="https://github.com/JuMe87/myFlix-Angular-client"
+                            target="_blank"
+                        >
+                            View code on GitHub</a
+                        >
+                        <br />
+                        <a
+                            href="https://jume87.github.io/myFlix-Angular-client/welcome"
+                            target="_blank"
+                        >
+                            Link to live app</a
+                        >
+                    </div>
+                </div>
+            </main>
+
+            <!--Footer with links to social media profiles-->
+            <footer class="page-footer">
+                <p class="p__italic">Find me on</p>
+                <div class="social media">
+                    <!-- Github logo -->
+                    <a href="https://github.com/JuMe87" target="_blank">
+                        <img
+                            src="img/github_icon.svg"
+                            alt="Githun logo"
+                            width="30"
+                            height="30"
+                            class="social-media__item"
+                        />
+                    </a>
+
+                    <!-- Linkedin logo -->
+                    <a
+                        href="https://www.linkedin.com/in/juliane-meyen-4803a660"
+                        target="_blank"
+                    >
+                        <img
+                            src="img/linkedin_icon.svg"
+                            alt="linkedin"
+                            width="30"
+                            height="30"
+                            class="social-media__item"
+                        />
+                    </a>
+                </div>
+            </footer>
         </div>
-
-        <div class="grid__item">
-          <h2>Project 2:</h2>
-            <br>
-            <h3>Pokédex-App</h3>
-            <br>  
-            <p> 
-                Within this project, I was responsible for the front end. It's written in React.js. Additionally, I've created the HTML and CSS templates
-            </p>
-            <br> 
-            <a href="https://github.com/JuMe87/Pokedex-App"> View code on GitHub</a>
-            <br> 
-            <a href="https://jume87.github.io/Pokedex-App/"> See my Portfolio-Website on GitHub</a>
-        </div>
-        <div class="grid__item">
-            <h2>Project 3:</h2>
-            <br>
-            <h3>MyFlix-App</h3>
-            <br>  
-            <p> 
-                Within this project, I was responsible for the front end. It's written in React.js. Additionally, I've created the HTML and CSS templates
-            </p>
-            <br> 
-            <a href="https://github.com/JuMe87/movie_api"> View code on GitHub</a>
-            <br> 
-            <a href="https://jume87.github.io/movie_api/"> See my Portfolio-Website on GitHub</a>
-        </div>
-        <div class="grid__item">
-           <h2>Project 4:</h2>
-            <br>
-            <h3>Meet-App</h3>
-            <img class="screenshot" width="100%" height="auto" src="img/meet_app.png" alt="screenshot of meet app">
-            <p> 
-                This is a serverless, progressive web application (PWA). It was built with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events. The user can search events by city and select the number of events displayed. Event stats are visualized in a pie chart and a scatter chart.
-            </p>
-            <br> 
-            <a href="https://github.com/JuMe87/portfolio-website"> View code on GitHub</a>
-            <br> 
-            <a href="https://github.com/JuMe87/portfolio-website"> See my Portfolio-Website on GitHub</a>
-        </div>
-        <div class="grid__item">
-            <h2>Project 5</h2>
-            <p> 
-                Within this project, I was responsible for the front end. It's written in React.js. Additionally, I've created the HTML and CSS templates
-            </p>
-            <a href="https://github.com/JuMe87/meet"> View code on GitHub</a>
-            <a href="https://jume87.github.io/meet/"> See my Portfolio-Website on GitHub</a>
-        </div>
-        <div class="grid__item">
-            <h2>Project 6</h2>
-            <p> 
-                Within this project, I was responsible for the front end. It's written in React.js. Additionally, I've created the HTML and CSS templates
-            </p>
-            <a href="https://github.com/JuMe87/portfolio-website"> View code on GitHub</a>
-            <a href="https://github.com/JuMe87/portfolio-website"> See my Portfolio-Website on GitHub</a>
-        </div>
-    </div>
-  </section> 
- <!--Footer with links to social media profiles-->
- <footer class="page-footer">
-    <p>Find me on</p>
-    <div class="social media">
-      <img src="img/github_icon.svg" alt="github" width="30" height="30">
-      <img src="img/twitter_icon.svg" alt="twitter" width="30" height="30">  
-      <img src="img/linkedin_icon.svg" alt="linkedin" width="30" height="30">
-    </div>
-  </footer>
-
-  <script src="js/tota11y.min.js"></script> 
-
-</body>
-
+        <script src="js/tota11y.min.js"></script>
+    </body>
 </html>
